@@ -1,5 +1,5 @@
 {
-  "name": "01-socket-server-basic",
+  "name": "socket-server",
   "engines": {
     "node": "20.17.0"
   },
