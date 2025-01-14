@@ -1,17 +1,15 @@
 {
   "name": "socket-server",
   "engines": {
-    "node": "20.17.0"
+    "node": "20.x"
   },
   "version": "1.0.0",
-  "description": "",
+  "description": "Servidor socket con Express y Socket.io",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js",
-    "build": "npm run build"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,9 +19,6 @@
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
-    "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "nodemon": "^3.1.7"
   }
 }
