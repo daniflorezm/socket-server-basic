@@ -20,7 +20,12 @@ class SocketServer {
         this.server = createServer(this.app);
 
         //Configuraciones de socket
-        this.io = new Server(this.server, { /* options */ });
+        this.io = new Server(this.server, {
+            cors: {
+                origin: "https://socket-server-basic-pz21.onrender.com"
+            }
+        });
+
     }
 
     middlewares() {
