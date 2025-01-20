@@ -4,6 +4,7 @@ import { Server } from "socket.io";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { SocketsConfiguration } from "./sockets.js"
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,6 +26,7 @@ class SocketServer {
     middlewares() {
         //Desplegar el directorio publico
         this.app.use(express.static(resolve(__dirname, "../public")));
+        this.app.use(cors());
     }
     sockets() {
         new SocketsConfiguration(this.io).socketEvents();
