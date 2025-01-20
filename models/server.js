@@ -22,7 +22,7 @@ class SocketServer {
         //Configuraciones de socket
         this.io = new Server(this.server, {
             cors: {
-                origin: "https://socket-server-basic-pz21.onrender.com",
+                origin: "*",
                 methods: ["GET", "POST"]
             }
         });
